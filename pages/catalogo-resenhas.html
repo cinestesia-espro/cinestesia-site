@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Resenhas | Cinestesia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="stylesheet" href="../src/css/catalogo-styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../src/images/cinestesia-logo.png" alt="Logo Cinestesia" class="logo-image">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html#inicio" class="nav-link">Início</a></li>
+                    <li><a href="../index.html#sobre" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="../index.html#resenhas" class="nav-link">Resenhas Recentes</a></li>
+                    <li><a href="./catalogo-resenhas.html" class="nav-link active">Catálogo</a></li>
+                    <li><a href="../index.html#recomendacoes" class="nav-link">Recomendações</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="catalog-main">
+        <!-- Header da Página -->
+        <section class="catalog-header">
+            <div class="container">
+                <h1>Catálogo de Resenhas</h1>
+                <p>Explore nossa coleção completa de análises cinematográficas e culturais</p>
+            </div>
+        </section>
+
+        <!-- Filtros e Busca -->
+        <section class="catalog-filters">
+            <div class="container">
+                <div class="filter-bar">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Buscar por título, diretor ou gênero...">
+                        <button id="searchBtn" class="search-btn">🔍</button>
+                    </div>
+                    
+                    <div class="filter-options">
+                        <select id="genreFilter" class="filter-select">
+                            <option value="">Todos os Gêneros</option>
+                            <option value="animacao">Animação</option>
+                            <option value="drama">Drama</option>
+                            <option value="comedia">Comédia</option>
+                            <option value="acao">Ação</option>
+                            <option value="suspense">Suspense</option>
+                            <option value="documentario">Documentário</option>
+                            <option value="romance">Romance</option>
+                            <option value="ficcao-cientifica">Ficção Científica</option>
+                            <option value="musica">Música</option>
+                            <option value="cultura">Cultura</option>
+                        </select>
+
+                        <select id="yearFilter" class="filter-select">
+                            <option value="">Todos os Anos</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2013">2013</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="1998">1998</option>
+                            <option value="1994">1994</option>
+                            <option value="classicos">Clássicos (antes de 1990)</option>
+                        </select>
+
+                        <select id="ratingFilter" class="filter-select">
+                            <option value="">Todas as Avaliações</option>
+                            <option value="5">★★★★★ (5 estrelas)</option>
+                            <option value="4">★★★★☆ (4 estrelas)</option>
+                            <option value="3">★★★☆☆ (3 estrelas)</option>
+                            <option value="2">★★☆☆☆ (2 estrelas)</option>
+                            <option value="1">★☆☆☆☆ (1 estrela)</option>
+                        </select>
+
+                        <button id="clearFilters" class="clear-btn">Limpar Filtros</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catálogo de Resenhas -->
+        <section class="catalog-content">
+            <div class="container">
+                <div class="catalog-stats">
+                    <span id="resultCount">Exibindo 12 de 12 resenhas</span>
+                    <div class="view-options">
+                        <button id="gridView" class="view-btn active" title="Visualização em Grade">⚏</button>
+                        <button id="listView" class="view-btn" title="Visualização em Lista">☰</button>
+                    </div>
+                </div>
+
+                <div id="reviewsGrid" class="reviews-catalog-grid">
+                    <!-- Review Cards serão inseridos aqui via JavaScript -->
+                </div>
+
+                <!-- Paginação -->
+                <div class="pagination">
+                    <button id="prevPage" class="page-btn" disabled>← Anterior</button>
+                    <div class="page-numbers" id="pageNumbers"></div>
+                    <button id="nextPage" class="page-btn">Próxima →</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cinestesia. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/cinestesia-espro-248818369" aria-label="LinkedIn">📘</a>
+                <a href="https://www.instagram.com/cinestesia_ep" aria-label="Instagram">📷</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../catalogo-script.js"></script>
+</body>
+</html>

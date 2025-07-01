@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conheça a Exposição Beleza Valente no IMS | Cinestesia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="stylesheet" href="../src/css/resenha-styles.css">
+    <style>
+        /* Estilos específicos para galeria de imagens */
+        .exhibition-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .gallery-image {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            border: 3px solid var(--detail-blue);
+        }
+        
+        .gallery-image:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+        }
+        
+        .gallery-image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .gallery-caption {
+            padding: 1rem;
+            background-color: var(--text-light);
+            font-family: 'Libre Baskerville', serif;
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            text-align: center;
+            font-style: italic;
+        }
+        
+        .inline-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 2rem auto;
+            display: block;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            border: 3px solid var(--detail-blue);
+        }
+        
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: var(--light-gray);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            font-family: 'Libre Baskerville', serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../src/images/cinestesia-logo.png" alt="Logo Cinestesia" class="logo-image">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html#inicio" class="nav-link">Início</a></li>
+                    <li><a href="../index.html#sobre" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="../index.html#resenhas" class="nav-link">Resenhas Recentes</a></li>
+                    <li><a href="catalogo-resenhas.html" class="nav-link">Catálogo</a></li>
+                    <li><a href="../index.html#recomendacoes" class="nav-link">Recomendações</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="review-main">
+        <!-- Breadcrumb -->
+        <section class="breadcrumb">
+            <div class="container">
+                <nav class="breadcrumb-nav">
+                    <a href="../index.html" class="breadcrumb-link">Início</a>
+                    <span class="breadcrumb-separator">›</span>
+                    <a href="catalogo-resenhas.html" class="breadcrumb-link">Cultura</a>
+                    <span class="breadcrumb-separator">›</span>
+                    <span class="breadcrumb-current">IMS - Beleza Valente</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Hero do Artigo -->
+        <section class="review-hero">
+            <div class="container">
+                <div class="review-hero-content">
+                    <div class="review-poster">
+                        <img src="../src/images/ims.jpg" alt="Instituto Moreira Salles" class="poster-image">
+                        <div class="rating-badge">
+                            <span class="rating-stars">🏛️</span>
+                            <span class="rating-score">Cultura</span>
+                        </div>
+                    </div>
+                    <div class="review-info">
+                        <h1 class="review-title">Conheça a Exposição Beleza Valente</h1>
+                        <div class="movie-meta">
+                            <span class="director">Artista: Zanele Muholi</span>
+                            <span class="year">2025</span>
+                            <span class="genre">Fotografia, Arte Contemporânea</span>
+                            <span class="duration">22/2 a 21/6/2025</span>
+                            <span class="country">Instituto Moreira Salles</span>
+                        </div>
+                        <div class="movie-tagline">
+                            "Zanele Muholi nos faz viajar na beleza sul-africana e na história marcante em suas obras"
+                        </div>
+                        <div class="review-summary">
+                            <p><strong>Nossa experiência:</strong> Uma exposição enriquecedora que conecta a história brasileira e sul-africana através da lente de Zanele Muholi, revelando lutas, resistência e a beleza da diversidade humana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conteúdo do Artigo -->
+        <section class="review-content">
+            <div class="container">
+                <div class="review-grid">
+                    <article class="review-text">
+                        <div class="review-header">
+                            <h2>Nossa Experiência</h2>
+                            <div class="review-meta">
+                                <span class="author">Por Equipe Cinestesia</span>
+                                <span class="date">30 de Junho, 2025</span>
+                                <span class="read-time">Leitura: 6 min</span>
+                            </div>
+                        </div>
+
+                        <div class="review-body">
+                            <p class="lead-paragraph">
+                                A oportunidade de visitar a exposição é <strong>enriquecedora</strong>, não só pra quem aprecia belas fotografias, mas para conhecer a história e a luta da população negra sul-africana pós-apartheid, unida à comunidade LGBTQIAPN.
+                            </p>
+
+                            <!-- Imagem da exposição -->
+                            <img src="../src/images/beleza-valente-ims.jpg" alt="Exposição Beleza Valente no IMS" class="inline-image">
+                            <p class="image-caption">Vista da exposição "Beleza Valente" no Instituto Moreira Salles</p>
+
+                            <h3>Beleza Valente - A Exposição</h3>
+                            <p>
+                                Ao emergir nos quadros é nítido como a história brasileira se interliga à sul-africana. Os preconceitos, a luta e o mais importante, a resistência. As raízes brasileiras estão em solo africano e os continentes separados pelo Oceano Atlântico apresentam muitas particularidades em comum. Há uma grande importância em uma exposição sul-africana no Brasil.
+                            </p>
+
+                            <p>
+                                Muholi compôs sua exposição com <em>Faces and Phases</em> (2006), um extenso mapeamento de pessoas lésbicas, bissexuais, não binárias e transmasculinas. E também com <em>Somnyama Ngomyama</em>, compostos por autorretratos que tratam de temas como racismo, trabalho, eurocentrismo e sexualidade. Muholi fez trabalhos inéditos produzidos no Brasil.
+                            </p>
+
+                            <!-- Galeria de imagens da exposição -->
+                            <div class="exhibition-gallery">
+                                <div class="gallery-image">
+                                    <img src="../src/images/exposicao-ims.jpg" alt="Visitantes na exposição">
+                                    <div class="gallery-caption">Visitantes apreciando as obras de Zanele Muholi</div>
+                                </div>
+                                <div class="gallery-image">
+                                    <img src="../src/images/muholi-ims.jpg" alt="Obra de Zanele Muholi">
+                                    <div class="gallery-caption">Uma das poderosas fotografias de Muholi em exibição</div>
+                                </div>
+                            </div>
+
+                            <h3>Quem é Zanele Muholi?</h3>
+                            <p>
+                                Zanele Muholi nasceu em <strong>19 de julho de 1972</strong> em Durban, África do Sul. Cresceu com seus cinco irmãos e apenas a mãe sustentando a casa como empregada doméstica. A paixão pela fotografia começou a surgir na adolescência e foi em 2003 que Muholi concluiu o curso de fotografia avançada na escola de fotografia e galeria Market Photo Workshop em Newtown, Joanesburgo.
+                            </p>
+
+                            <p>
+                                Alguns anos depois, em <strong>2009</strong>, recebeu o título de mestrado pela Universidade Ryerson, em Toronto, Canadá. O tema da dissertação apresentava a história da identidade das lésbicas negras e suas políticas no contexto sul-africano pós apartheid.
+                            </p>
+
+                            <h3>Contexto do Apartheid</h3>
+                            <p>
+                                A título de curiosidade, apartheid foi um movimento de segregação racial durante o período de <strong>1948 a 1994</strong>. A separação entre pretos e brancos acontecia em todos os lugares da África do Sul, causando uma opressão da população negra que perpetua até hoje por meio do racismo estrutural.
+                            </p>
+
+                            <p>
+                                Depois de diversos trabalhos tão relevantes para a população negra, mulheres e comunidade LGBTQIAPN, Zanele se descreve como não apenas uma fotógrafa, mas uma <em>ativista visual</em>. Hoje, é docente de vídeo e foto na Universidade de Bremen, na Alemanha.
+                            </p>
+
+                            <h3>O que é o IMS?</h3>
+                            <p>
+                                O <strong>Instituto Moreira Sales</strong> foi fundado pelo diplomata Walther Moreira Sales em 1992, o primeiro centro cultural foi criado em Poços de Caldas (MG). Em São Paulo, a inauguração foi em um casarão no bairro de Higienópolis em 1996.
+                            </p>
+
+                            <p>
+                                A localização foi pensada pelo arquiteto Olavo Redig e o paisagismo pelo renomado Burle Marx. A inauguração na Avenida Paulista foi em 2017 e, hoje, é um importante centro cultural no coração de São Paulo.
+                            </p>
+                        </div>
+
+                        <div class="review-footer">
+                            <div class="review-rating">
+                                <h4>Avaliação da Exposição</h4>
+                                <div class="rating-breakdown">
+                                    <div class="rating-item">
+                                        <span class="rating-label">Relevância Cultural</span>
+                                        <div class="rating-stars">★★★★★</div>
+                                    </div>
+                                    <div class="rating-item">
+                                        <span class="rating-label">Qualidade Artística</span>
+                                        <div class="rating-stars">★★★★★</div>
+                                    </div>
+                                    <div class="rating-item">
+                                        <span class="rating-label">Experiência Educativa</span>
+                                        <div class="rating-stars">★★★★★</div>
+                                    </div>
+                                    <div class="rating-item">
+                                        <span class="rating-label">Impacto Social</span>
+                                        <div class="rating-stars">★★★★★</div>
+                                    </div>
+                                </div>
+                                <div class="final-score">
+                                    <span class="score-label">Recomendação:</span>
+                                    <span class="score-value">Imperdível</span>
+                                </div>
+                            </div>
+
+                            <div class="review-tags">
+                                <h4>Tags</h4>
+                                <div class="tags-list">
+                                    <span class="tag">Zanele Muholi</span>
+                                    <span class="tag">Fotografia</span>
+                                    <span class="tag">Arte Sul-Africana</span>
+                                    <span class="tag">LGBTQIAPN</span>
+                                    <span class="tag">IMS</span>
+                                    <span class="tag">Ativismo Visual</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <aside class="review-sidebar">
+                        <div class="sidebar-card movie-info">
+                            <h3>Informações da Exposição</h3>
+                            <div class="info-list">
+                                <div class="info-item">
+                                    <span class="info-label">Data:</span>
+                                    <span class="info-value">22/2 a 21/6/2025</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Local:</span>
+                                    <span class="info-value">IMS Paulista</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Endereço:</span>
+                                    <span class="info-value">Av. Paulista, 2424</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Horário:</span>
+                                    <span class="info-value">Ter a dom, 10h às 20h</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Entrada:</span>
+                                    <span class="info-value">Gratuita</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Acessibilidade:</span>
+                                    <span class="info-value">Sim</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Classificação:</span>
+                                    <span class="info-value">Sensível +12 anos</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-card sequels-info">
+                            <h3>Obras em Destaque</h3>
+                            <div class="sequel-item">
+                                <h4>Faces and Phases (2006)</h4>
+                                <p>Mapeamento de pessoas lésbicas, bissexuais, não binárias e transmasculinas</p>
+                            </div>
+                            <div class="sequel-item">
+                                <h4>Somnyama Ngomyama</h4>
+                                <p>Autorretratos sobre racismo, trabalho, eurocentrismo e sexualidade</p>
+                            </div>
+                            <div class="sequel-item">
+                                <h4>Obras Inéditas</h4>
+                                <p>Trabalhos produzidos especialmente durante estadia no Brasil</p>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-card share-buttons">
+                            <h3>Compartilhar</h3>
+                            <div class="share-list">
+                                <button class="share-btn facebook">📘 Facebook</button>
+                                <button class="share-btn twitter">🐦 Twitter</button>
+                                <button class="share-btn whatsapp">📱 WhatsApp</button>
+                                <button class="share-btn copy-link">🔗 Copiar Link</button>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artigos Relacionados -->
+        <section class="related-reviews">
+            <div class="container">
+                <h2>Mais Resenhas e Artigos</h2>
+                <div class="related-grid">
+                    <article class="related-card">
+                        <div class="related-image">
+                            <img src="../src/images/musicas-abolicao.jpg" alt="Abolição pra quem?">
+                        </div>
+                        <div class="related-content">
+                            <h3>Abolição pra quem? Quatro vozes que ainda gritam</h3>
+                            <p>Quatro artistas do rap nacional que transformam dor em resistência através da música...</p>
+                            <a href="artigo-abolicao.html" class="read-more-btn">Ler Artigo</a>
+                        </div>
+                    </article>
+
+                    <article class="related-card">
+                        <div class="related-image">
+                            <img src="../src/images/tempos-modernos-charlie-chaplin.jpg" alt="Tempos Modernos">
+                        </div>
+                        <div class="related-content">
+                            <h3>Tempos Modernos (1936)</h3>
+                            <p>Charlie Chaplin e sua crítica social através do humor: quando rir é uma forma de resistir...</p>
+                            <a href="artigo-tempos-modernos.html" class="read-more-btn">Ler Resenha</a>
+                        </div>
+                    </article>
+
+                    <article class="related-card">
+                        <div class="related-image">
+                            <img src="../src/images/kiriku.png" alt="Kiriku e a Feiticeira">
+                        </div>
+                        <div class="related-content">
+                            <h3>Kiriku e a Feiticeira</h3>
+                            <p>Uma obra-prima da animação que celebra a cultura africana através de uma narrativa única...</p>
+                            <a href="resenha-kiriku.html" class="read-more-btn">Ler Resenha</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cinestesia. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/cinestesia-espro-248818369" aria-label="LinkedIn">📘</a>
+                <a href="https://www.tiktok.com/@cinestesia" aria-label="TikTok">🐦</a>
+                <a href="https://www.instagram.com/cinestesia_ep" aria-label="Instagram">📷</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../resenha-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinestesia - Portal de Cinema</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="./src/images/cinestesia-logo.png" alt="Logo Cinestesia" class="logo-image">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="./pages/catalogo-resenhas.html" class="nav-link">Catálogo</a></li>
+                    <li><a href="#recomendacoes" class="nav-link">Recomendações</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>Bem-vindo ao Cinestesia</h2>
+                <p>Sua fonte confiável para resenhas e recomendações da Cultura Pop</p>
+                <button class="cta-button" onclick="scrollToReviews()">Explorar Resenhas</button>
+            </div>
+        </section>
+
+        <section id="sobre" class="about">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>Missão</h3>
+                        <p>Democratizar o acesso à cultura cinematográfica através de análises críticas e recomendações personalizadas que conectam espectadores aos filmes que realmente importam.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Visão</h3>
+                        <p>Ser a principal referência em crítica cinematográfica no Brasil, promovendo o cinema como arte e ferramenta de transformação social.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Valores</h3>
+                        <p>Compromisso com a qualidade crítica, diversidade cinematográfica, acessibilidade cultural e respeito às diferentes perspectivas artísticas e culturais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resenhas" class="reviews">
+            <div class="container">
+                <h2>Resenhas Recentes</h2>
+                <div class="reviews-grid">
+                    <article class="review-card">
+                        <div class="review-image">
+                            <img src="./src/images/kiriku.png" alt="Kiriku">
+                        </div>
+                        <div class="review-content">
+                            <h3>Kiriku</h3>
+                            <p>Uma obra-prima da animação que combina tradições africanas com técnicas cinematográficas inovadoras. Michel Ocelot criou um universo visual único que transcende barreiras culturais e etárias...</p>
+                            <button class="read-more"><a href="./pages/resenha-kiriku.html">Ler Mais</a></button>
+                        </div>
+                    </article>
+                    
+                    <article class="review-card">
+                        <div class="review-image">
+                            <img src="./src/images/tempos-modernos-charlie-chaplin.jpg" alt="Tempos Modernos">
+                        </div>
+                        <div class="review-content">
+                            <h3>Tempos Modernos</h3>
+                            <p>Charlie Chaplin antecipou questões sociais que permanecem relevantes hoje. Uma análise profunda sobre como a industrialização afeta a humanidade e a dignidade do trabalho...</p>
+                            <button class="read-more"><a href="./pages/resenha-tempos-modernos.html">Ler Mais</a></button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="recomendacoes" class="recommendations">
+            <div class="container">
+                <h2>Recomendações</h2>
+                <div class="recommendation-form">
+                    <h3>Recomende um filme ou obra para a equipe do Cinestesia:</h3>
+                    <form id="recommendationForm">
+                        <div class="form-group">
+                            <label for="movieTitle">Título do Filme/Obra:</label>
+                            <input type="text" id="movieTitle" name="movieTitle" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="director">Diretor:</label>
+                            <input type="text" id="director" name="director">
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Ano:</label>
+                            <input type="number" id="year" name="year" min="1900" max="2025">
+                        </div>
+                        <div class="form-group">
+                            <label for="reason">Por que recomenda esta obra?</label>
+                            <textarea id="reason" name="reason" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Seu e-mail (opcional):</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Recomendação</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cinestesia. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/cinestesia-espro-248818369" aria-label="LinkedIn">📘</a>
+                <a href="https://www.instagram.com/cinestesia_ep" aria-label="Instagram">📷</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
